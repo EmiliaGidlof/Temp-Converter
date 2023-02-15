@@ -25,16 +25,18 @@ html {
   #aone{
   margin-left: 150px;
   width: 45%;
+  font-size: larger;
   }
 
   #atwo{
     margin-right: 150px;
     width: 45%;
+    font-size: larger;
   }
   
   #athree{
     margin-top: 50px;
     text-align: center;
-    font-size: medium;
+    font-size: large;
     font-style: italic;
   }
