@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sw">
+  <head>
+      <title> Omvandlare temperatur övning</title>
+      <link rel="stylesheet" href="main.css">
+  </head>
+
+
+    <body>
+      <div class="overlay">
+        <h1> Omvandlare temperatur</h1>
+      </div>
+
+      <main>
+        <article id="aone"> 
+          <p> Ange grader i Fahrenheit för att Konvertera till Celsius </p>
+
+          <p>
+            <label> Fahrenheit </label> <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
+            oninput="tempKonverterare(this.value)"
+            onchange="tempKonverterare(this.value)">
+          </p>
+          <p>Celsius: <span id="outputCelsius"></span></p>
+        </article>
+
+        <article id="atwo">
+          <p> Ange grader i Celsius för att Konvertera till Farenheit </p>
+          <p>
+            <label>Celsius</label>
+            <input id="inputCelsius" type="number" placeholder="Celsius" 
+            oninput="CeltoFar(this.value)" 
+            onchange="CeltoFar(this.value)">
+          </p>
+          <p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+        </article>
+      </main>
+
+        <article id="athree">
+          <p> Överväg dina eskapader vid minusgrader,
+          </p>
+          <p> och undvik linjebuss vid plus!</p>
+        </article>
+
+      <script src="funky.js"> </script>
+
+    </body>
+
+       <!-- * onchange upptäcker när användaren ändrar värdet och uppdaterar sidans innehåll -->
+
+</html>
